@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<policy type="and" name="LPB Preservation Master (SD)">
+  <description>Ensures file conforms to LPB Preservation Master specifications</description>
+  <rule name="Video Encoding" value="Format_Commercial_IfAny" tracktype="General" occurrence="*" operator="=">IMX 50</rule>
+  <rule name="Frame Height" value="Height" tracktype="Video" occurrence="1" operator="=">486</rule>
+  <rule name="Interlacement" value="ScanType" tracktype="Video" occurrence="1" operator="=">Interlaced</rule>
+  <rule name="Frame Width" value="Width" tracktype="Video" occurrence="1" operator="=">720</rule>
+  <rule name="Audio Encoding" value="Format" tracktype="Audio" occurrence="1" operator="=">PCM</rule>
+  <rule name="Audio Sampling Rate" value="SamplingRate" tracktype="Audio" occurrence="1" operator="=">48000</rule>
+  <rule name="Audio Bit Depth" value="BitDepth" tracktype="Audio" occurrence="1" operator="=">16</rule>
+  <rule name="Color Space" value="ColorSpace" tracktype="Video" occurrence="*" operator="=">YUV</rule>
+  <rule name="Chroma Subsampling" value="ChromaSubsampling" tracktype="Video" occurrence="*" operator="=">4:2:2</rule>
+</policy>
